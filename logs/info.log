@@ -1,0 +1,34 @@
+[2023-56--11 14:56:03.011] [INFO ] [main] com.play.api.DemoApplication Starting DemoApplication using Java 17.0.5 on DESKTOP-GVS7S2A with PID 11680 (C:\Users\yg\Downloads\demo\build\classes\java\main started by yg in C:\Users\yg\Downloads\demo)
+[2023-56--11 14:56:03.013] [INFO ] [main] com.play.api.DemoApplication No active profile set, falling back to 1 default profile: "default"
+[2023-56--11 14:56:03.659] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 9090 (http)
+[2023-56--11 14:56:03.664] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9090"]
+[2023-56--11 14:56:03.665] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2023-56--11 14:56:03.667] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.70]
+[2023-56--11 14:56:03.731] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2023-56--11 14:56:03.731] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 691 ms
+[2023-56--11 14:56:03.941] [INFO ] [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2023-56--11 14:56:04.055] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-9090"]
+[2023-56--11 14:56:04.069] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 9090 (http) with context path ''
+[2023-56--11 14:56:04.070] [INFO ] [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+[2023-56--11 14:56:04.079] [INFO ] [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+[2023-56--11 14:56:04.097] [INFO ] [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+[2023-56--11 14:56:04.190] [INFO ] [main] com.play.api.DemoApplication Started DemoApplication in 1.44 seconds (JVM running for 2.531)
+[2023-07--11 15:07:56.636] [INFO ] [main] com.play.api.DemoApplication Starting DemoApplication using Java 17.0.5 on DESKTOP-GVS7S2A with PID 18612 (C:\Users\yg\Downloads\demo\build\classes\java\main started by yg in C:\Users\yg\Downloads\demo)
+[2023-07--11 15:07:56.637] [INFO ] [main] com.play.api.DemoApplication No active profile set, falling back to 1 default profile: "default"
+[2023-07--11 15:07:57.316] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 9090 (http)
+[2023-07--11 15:07:57.322] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9090"]
+[2023-07--11 15:07:57.322] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2023-07--11 15:07:57.322] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.70]
+[2023-07--11 15:07:57.395] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2023-07--11 15:07:57.395] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 732 ms
+[2023-07--11 15:07:57.611] [INFO ] [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2023-07--11 15:07:57.741] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-9090"]
+[2023-07--11 15:07:57.754] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 9090 (http) with context path ''
+[2023-07--11 15:07:57.755] [INFO ] [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+[2023-07--11 15:07:57.765] [INFO ] [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+[2023-07--11 15:07:57.784] [INFO ] [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+[2023-07--11 15:07:57.882] [INFO ] [main] com.play.api.DemoApplication Started DemoApplication in 1.527 seconds (JVM running for 1.959)
+[2023-08--11 15:08:08.933] [INFO ] [http-nio-9090-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-08--11 15:08:08.933] [INFO ] [http-nio-9090-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2023-08--11 15:08:08.934] [INFO ] [http-nio-9090-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 1 ms
+[2023-08--11 15:08:08.948] [INFO ] [http-nio-9090-exec-1] com.play.api.controller.GetController getHello 메서드가 호출되었습니다
