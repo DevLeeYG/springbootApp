@@ -9,7 +9,9 @@ public interface ProductService {
 
     ProductResponseDto saveProduct(ProductDto productDto);
 
-    ProductResponseDto changeProductName(Long number, String name) throws Exception;
+    ProductResponseDto changeProductStatus(Long number, String name ,Integer price, Integer stock) throws Exception;
+
+
 
     void deleteProduct(Long number) throws Exception;
 

@@ -15,38 +15,41 @@ public class ProductDAOImpl implements ProductDAO {
     private final ProductRepository productRepository;
 
     @Autowired
-    public ProductDAOImpl(ProductRepository productRepository){
+    public ProductDAOImpl(ProductRepository productRepository) {
         this.productRepository = productRepository;
     }
 
     @Override
-    public Product insertProduct(Product product){
+    public Product selectProduct(Long number) {
+        Product selectedProduct = productRepository.getReferenceById(number);
+        return selectedProduct;
+    }
+
+
+    @Override
+    public Product insertProduct(Product product) {
         Product saveProduct = productRepository.save(product);
         return saveProduct;
     }
 
 
     @Override
-    public Product selectProduct(Long number){
-        Product selectedProduct = productRepository.getReferenceById(number);
-        return selectedProduct;
-    }
-
-    @Override
-    public Product updateProductName(Long number, String name) throws Exception{
+    public Product updateProductStatus(Long number, String name, int price, int stock) throws Exception {
         Optional<Product> selectedProduct = productRepository.findById(number);
 
         Product updateProduct;
 
-        if(selectedProduct.isPresent()){
+        if (selectedProduct.isPresent()) {
             Product product = selectedProduct.get();
 
             product.setName(name);
+            product.setPrice(price);
+            product.setStock(stock);
             product.setUpdateAt(LocalDateTime.now());
 
             updateProduct = productRepository.save(product);
 
-        }else{
+        } else {
             throw new Exception();
         }
 
@@ -54,7 +57,7 @@ public class ProductDAOImpl implements ProductDAO {
     }
 
     @Override
-    public void deleteProduct(Long number) throws Exception{
+    public void deleteProduct(Long number) throws Exception {
 
     }
 }

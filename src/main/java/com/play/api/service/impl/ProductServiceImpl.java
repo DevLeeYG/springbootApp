@@ -36,6 +36,9 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public  ProductResponseDto saveProduct(ProductDto productDto){
+
+        //product 는 어떻게 보면 Entity 지만 또하나의 dto 일수도 있겠다.
+
         Product product = new Product();
         product.setName(productDto.getName());
         product.setPrice(productDto.getPrice());
@@ -44,6 +47,9 @@ public class ProductServiceImpl implements ProductService {
         product.setUpdateAt(LocalDateTime.now());
 
         Product savedProduct = productDAO.insertProduct(product);
+
+
+        //반환된 savedProduct 객체로 responseDto 에 담아 response 반환
 
         ProductResponseDto productResponseDto = new ProductResponseDto();
 
@@ -58,8 +64,8 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public ProductResponseDto changeProductName(Long number, String name) throws Exception{
-        Product changedProduct = productDAO.updateProductName(number,name);
+    public ProductResponseDto changeProductStatus(Long number, String name, Integer price, Integer stock) throws Exception{
+        Product changedProduct = productDAO.updateProductStatus(number,name,price,stock);
 
         ProductResponseDto productResponseDto = new ProductResponseDto();
 

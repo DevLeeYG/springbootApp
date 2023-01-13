@@ -2,7 +2,7 @@ package com.play.api.controller;
 
 import com.play.api.data.dto.ProductDto;
 import com.play.api.data.dto.ProductResponseDto;
-import com.play.api.dto.ChangeProductNameDto;
+import com.play.api.dto.ChangeProductStatusDto;
 import com.play.api.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -37,10 +37,13 @@ public class ProductController {
     }
 
     @PutMapping
-    public ResponseEntity<ProductResponseDto> changeProductName(@RequestBody ChangeProductNameDto changeProductNameDto) throws  Exception{
-        ProductResponseDto productResponseDto = productService.changeProductName(
-                changeProductNameDto.getNumber(),
-                changeProductNameDto.getName());
+    public ResponseEntity<ProductResponseDto> changeProductStatus(@RequestBody ChangeProductStatusDto changeProductStatusDto) throws  Exception{
+        ProductResponseDto productResponseDto = productService.changeProductStatus(
+                changeProductStatusDto.getNumber(),
+                changeProductStatusDto.getName(),
+                changeProductStatusDto.getPrice(),
+                changeProductStatusDto.getStock());
+
 
         return ResponseEntity.status(HttpStatus.OK).body(productResponseDto);
 
