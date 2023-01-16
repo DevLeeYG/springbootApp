@@ -1,4 +1,4 @@
-package com.play.api.data.entity;
+package com.play.test.data.entity;
 
 import lombok.*;
 
@@ -10,6 +10,7 @@ import java.time.LocalDateTime;
  * */
 @Entity
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "product")

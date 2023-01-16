@@ -1,4 +1,4 @@
-package com.play.api.dto;
+package com.play.test.data.dto;
 
 public class ChangeProductStatusDto {
 

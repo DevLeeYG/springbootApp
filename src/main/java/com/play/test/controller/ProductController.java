@@ -1,9 +1,9 @@
-package com.play.api.controller;
+package com.play.test.controller;
 
-import com.play.api.data.dto.ProductDto;
-import com.play.api.data.dto.ProductResponseDto;
-import com.play.api.dto.ChangeProductStatusDto;
-import com.play.api.service.ProductService;
+import com.play.test.data.dto.ProductDto;
+import com.play.test.data.dto.ProductResponseDto;
+import com.play.test.data.dto.ChangeProductStatusDto;
+import com.play.test.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
