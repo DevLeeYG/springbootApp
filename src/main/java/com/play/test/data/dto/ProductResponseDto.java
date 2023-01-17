@@ -1,4 +1,4 @@
-package com.play.api.data.dto;
+package com.play.test.data.dto;
 
 public class ProductResponseDto {
 

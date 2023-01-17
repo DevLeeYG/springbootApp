@@ -1,6 +1,6 @@
-package com.play.api.data.repository;
+package com.play.test.data.repository;
 
-import com.play.api.data.entity.Product;
+import com.play.test.data.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

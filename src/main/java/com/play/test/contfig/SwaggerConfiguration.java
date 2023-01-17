@@ -1,4 +1,4 @@
-package com.play.api.contfig;
+package com.play.test.contfig;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

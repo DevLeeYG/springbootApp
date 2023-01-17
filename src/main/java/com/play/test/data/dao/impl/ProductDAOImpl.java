@@ -1,8 +1,8 @@
-package com.play.api.data.dao.impl;
+package com.play.test.data.dao.impl;
 
-import com.play.api.data.dao.ProductDAO;
-import com.play.api.data.entity.Product;
-import com.play.api.data.repository.ProductRepository;
+import com.play.test.data.dao.ProductDAO;
+import com.play.test.data.entity.Product;
+import com.play.test.data.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

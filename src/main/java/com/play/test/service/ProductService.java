@@ -1,7 +1,7 @@
-package com.play.api.service;
+package com.play.test.service;
 
-import com.play.api.data.dto.ProductDto;
-import com.play.api.data.dto.ProductResponseDto;
+import com.play.test.data.dto.ProductDto;
+import com.play.test.data.dto.ProductResponseDto;
 
 public interface ProductService {
 

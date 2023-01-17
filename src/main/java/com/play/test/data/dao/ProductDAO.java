@@ -1,6 +1,6 @@
-package com.play.api.data.dao;
+package com.play.test.data.dao;
 
-import com.play.api.data.entity.Product;
+import com.play.test.data.entity.Product;
 
 public interface ProductDAO {
 
